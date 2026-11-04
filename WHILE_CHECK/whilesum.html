@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskview</title>
+</head>
+<style>
+    body {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: #111822;
+        color: white;
+    }
+
+    form {
+        margin-top: 150px;
+        border: 1px solid;
+        padding: 70px;
+        line-height: 30px;
+        background-color: #2d333a;
+    }
+
+    button {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    input{
+        width: 80%;
+    }
+</style>
+
+<body>
+    <form action="">
+        <h1 align="center">Take your answer</h1><br>
+        Enter:&nbsp;&nbsp;&nbsp;<input type="number" id="value"><br>
+        <center>
+            <button type="button" onclick="plus() ">sum</button>
+            <button type="button" id="ron"onclick="rev()">reverse</button>
+            <button type="button" onclick="arm()">armstrong</button>
+            <button type="button" onclick="palin()">palindrome</button>
+        </center>
+        <P>sum of digits: <span id="result"></span></P>
+        <p>Reverse of number: <span id="reverse"></span></p>
+        <p>armstrong of number: <span id="armstrong"></span></p>
+        <p>palindrome of number: <span id="palindrome"></span></p>        
+    </form>
+    <script>
+        reverse=0;
+        function plus() {
+            num = parseInt(document.getElementById("value").value);
+            sum = 0;
+            while (num != 0) {
+                sum = sum + num % 10;
+                num = parseInt(num / 10);
+            }
+            document.getElementById("result").innerHTML = sum;
+
+        }
+        function rev() {
+            num = parseInt(document.getElementById("value").value);
+            sum = 0;
+            while (num != 0) {
+                sum = sum * 10 + (num % 10);
+                num = parseInt(num / 10);
+            }
+            document.getElementById("reverse").innerHTML = sum;
+            reverse=sum;
+            
+        }
+
+
+
+        function arm() {
+            num = parseInt(document.getElementById("value").value);
+            str= num.toString();
+            console.log(str);
+            len=str.length;
+            sum = 0;
+            cnum = num;
+            let r;
+            while (num != 0) {
+                r = (num % 10);
+                sum = sum + (r ** len);
+                num = parseInt(num / 10);
+            }
+            if (sum === cnum) {
+                document.getElementById("armstrong").innerHTML = "true";
+            }
+            else {
+                document.getElementById("armstrong").innerHTML = "false";
+            }
+        }
+        function palin(){
+            num = parseInt(document.getElementById("value").value);
+            if(reverse==num)
+        {
+            document.getElementById("palindrome").innerHTML = "true";
+        }
+        else{
+            document.getElementById("palindrome").innerHTML = "false";
+        }
+        }
+    </script>
+</body>
+
+</html>

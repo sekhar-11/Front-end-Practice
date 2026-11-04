@@ -1,0 +1,83 @@
+#y{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    float: left;
+}
+#yc{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    float: right;
+}
+#rc{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    float: left;
+}
+#r{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    float: right;
+}
+#bit1{
+    width: 30%;
+    height: 30%;
+    background-color: red;
+    float: right;
+    
+}
+#bit1c{
+    width: 30%;
+    height: 30%;
+    background-color: red;
+    float: left;
+    
+
+}
+#bit2c{
+    width: 30%;
+    height: 30%;
+    background-color: yellow;
+    float: right;
+    
+}
+#bit2{
+    width: 30%;
+    height: 30%;
+    background-color: yellow;
+    float: left;
+}
+   
+#box1{
+    width: 100%;
+    height: 70%;
+    background-color: yellow;
+    float: left;
+   
+}
+#box1c{
+    width: 70%;
+    height: 70%;
+    background-color: yellow;
+    float: right;
+}
+#box2c{
+    width: 70%;
+    height: 70%;
+    background-color: red;
+    float: left;
+}
+#box2{
+    width: 100%;
+    height: 70%;
+    background-color: red;
+    float: right;
+}
+#main{
+    width: 500px;
+    height: 500px;
+
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/mediat3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Brand</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        color: white; 
+    }
+    #first{
+        width: 100%;
+        height:900px;
+        text-align: center;
+        padding-top: 20px; 
+        background-color: rgb(28, 28, 197);
+        color: white;
+        line-height: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    #intro{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        line-height: 40px;
+        font-size: 40px;
+        font-weight: 100;
+        text-decoration: dashed;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #firstsub{
+        width: 100%;
+        height:500px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    #imgset{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #firstpageimg{
+        width: 90%;
+        height: 90%;
+        border: 3px solid rgb(28, 28, 197);
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
+    #firstpageimg:hover{
+        border: 2px solid rgb(212, 211, 211);
+        transform: scale(1.2);
+    }
+    #container1{
+        width: 75%;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #box1{
+        width: 32%;
+        height: 100%;
+        background-color: white;
+    }
+    #box1:hover{
+        transform: scale(1.01);
+        box-shadow: rgba(17, 17, 27, 0.66) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(9, 31, 54, 0.474) 0px -2px 6px 0px inset;
+    }
+    #boxmatter{
+        width: 100%;
+        height: 45%;
+        color: black;     
+    }
+    #second{
+        width: 100%;
+        height: 700px;
+        text-align: center;
+        font-size: 18px;
+        background-image: url(../images/bglayers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: black;
+    }
+    #intro2{
+        margin-top: 0px;
+        font-weight: 100;
+        padding-top: 30px;
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #container2{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+    #matter{
+        width: 75%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #mbox1{
+        width: 30%;
+        height: 100%;
+        text-align: justify;
+        background-image: url(../images/first.png);
+        background-size: cover;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: white;
+    }
+    #mbox1:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: scale(1.1);
+    }
+    #mbox2:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: scale(1.1);
+    }
+    #mbox3:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: scale(1.1);
+    }
+    #mbox4:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: scale(1.1);
+    }
+    #mbox5:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: scale(1.1);
+    }
+    #mbox6:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: scale(1.1);
+    }
+
+    #mbox2{
+        width: 30%;
+        height: 100%;
+        text-align: justify;
+        background-image: url(../images/back.png);
+        color: white;
+        background-size: cover;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: white;
+    }#mbox3{
+        width: 30%;
+        height: 100%;
+        text-align: justify;
+        background-image: url(../images/hogwarts.jpg);
+        background-size: cover;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: white;
+    }#mbox4{
+        width: 30%;
+        height: 100%;
+        text-align: justify;
+        background-image: url(../images/thodelu.jpg);
+        background-size: cover;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: white;
+    }#mbox5{
+        width: 30%;
+        height: 100%;
+        text-align: justify;
+        background-image: url(../images/batlogo.jpg);
+        background-size: cover;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: white;
+    }#mbox6{
+        width: 30%;
+        height: 100%;
+        text-align: justify;
+        background-image: url(../images/horror.jpeg);
+        background-size: cover;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: white;
+    }
+    #slno{
+        font-size: 35px;
+        color: rgb(104, 214, 227);
+    }
+    #third{
+        width: 100%;
+        height: 700px;
+        background-color: rgb(28, 28, 197); 
+        text-align: center;
+    }
+    #containerparent{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    #container3{
+        width: 70%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #box3:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transform: scale(1.01);
+    }
+
+    #box3{
+        width: 49%;
+        height: 100%;
+        background-color: white;
+        color: black;
+        display: flex;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+    #b1{
+            width: 50%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    #b1p{
+            width: 50%;
+            height: 100%;   
+            text-align: left; 
+            padding-right: 10px;  
+    }
+    #b2{
+        width: 50%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    #b2p{
+            width: 50%;
+            height: 100%;
+            text-align: left;
+            padding-right: 10px;  
+
+    }
+    
+   #meet{
+    border-radius: 50%;
+    display: flex;
+    justify-content:start;
+   }
+   #intro3{
+    margin-top: 0px;
+    font-size: 40px;
+    text-transform: capitalize;   
+    color: rgb(232, 68, 95);
+   }
+   i{
+    font-size:40px;
+    color:rgb(232, 68, 95);
+    margin-top: 40px;
+    margin-right: 25px;
+    border-radius:50% ;
+   }
+   i:hover{
+    background-color: rgb(232, 68, 95);
+    color: white;
+   }
+  
+</style>
+<body>
+    <div id="first">
+        <h1 id="intro">3D Gallery</h1>
+        <p>Make your own images by using tools and textures and resizing and re-arranging<br>You can collect or download images from this application,<br>CREATE AND COLLECT !</p>
+        <div id="firstsub">
+            <div id="container1">
+                <div id="box1">
+                    <div id="imgset"><img src="../images/space.jpg" width="90%" height="40%" id="firstpageimg"></div>
+                    <div id="boxmatter"><h1 id="intro">Space</h1><p>- Arrange 3d objects in image by using tools</p><p>- Change the background-color of the image</p><p>- Apply the filters and create effective images</p><p>- Overview the image and save</p></div>
+                </div>
+                <div id="box1">
+                    <div id="imgset"><img src="../images/godzilla.jpg" width="90%" height="40%" id="firstpageimg"></div>
+                    <div id="boxmatter"><h1 id="intro">Godzilla</h1><p>- Arrange 3d objects in image by using tools</p><p>- Change the background-color of the image</p><p>- Apply the filters and create effective images</p><p>- Overview the image and save</p></div>
+                </div>
+                <div id="box1">
+                    <div id="imgset"><img src="../images/f.jpg" width="90%" height="40%" id="firstpageimg"></div>
+                    <div id="boxmatter"><h1 id="intro">Forest Camp</h1><p>- Arrange 3d objects in image by using tools</p><p>- Change the background-color of the image</p><p>- Apply the filters and create effective images</p><p>- Overview the image and save</p></div>
+                </div>
+            </div>
+        </div>
+        <h1 id="intro">Download Now !</h1>
+    </div>
+    <div id="second">
+        <h1 id="intro2">Architecting the digital 3D Images</h1>
+        <p>Divide the 3D images into list of categories and arrange them by their specifications.<br>These are categories of images and have more categories !<br>Specify the categories by their characterstics,</p>
+        <div id="container2">
+            <div id="matter">
+                <div id="mbox1"><p><span id="slno">1</span>The nature</p></div>
+                <div id="mbox2"><p><span id="slno">2</span> Logo</p></div>
+                <div id="mbox3"><p><span id="slno">3</span> Hollywood</p></div>
+            </div>
+        </div>
+        <div id="container2">
+            <div id="matter">
+                <div id="mbox4"><p><span id="slno">4</span> Asthetic</p></div>
+                <div id="mbox5"><p><span id="slno">5</span> cartoon</p></div>
+                <div id="mbox6"><p><span id="slno">6</span> Horror & Black</p></div>
+            </div>
+        </div>
+    </div>
+    <div id="third">
+        <h1 id="intro2">Meet The Team</h1>
+        <p>Above images are created by using tools and other from this application<br>Ecspecially this site will be used to specify the application<br>Get the app by download !</p>
+        <h2>Team members</h2>
+        <div id="containerparent">
+            <div id="container3">
+                
+                <div id="box3">
+                    <div id="b1"><img src="../images/user.png" width="50%" height="45%" id="meet"></div>
+                    <div id="b1p">
+                        <h3>Team member1</h3>
+                        <h1 id="intro3">sekhar</h1>
+                        <p>Front-end developer, this site be made by using only html and css with display flex properties and updating to provide easy navigation to application page</p>
+                        <i id="footericons" class="fa-brands fa-facebook"></i>
+                        <i id="footericons" class="fa-brands fa-twitter" ></i>
+                        <i id="footericons" class="fa-brands fa-instagram" ></i>
+                    </div>
+                </div>
+                <div id="box3">
+                    <div id="b2"><img src="../images/user.png" width="50%" height="45%" id="meet"></div>
+                    <div id="b2p">
+                        <h3>Team member2</h3>
+                        <h1 id="intro3">prasad</h1>
+                        <p>Front-end developer, this site be made by using only html and css with display flex properties.</p>
+                        <i id="footericons" class="fa-brands fa-facebook"></i>
+                        <i id="footericons" class="fa-brands fa-twitter" ></i>
+                        <i id="footericons" class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

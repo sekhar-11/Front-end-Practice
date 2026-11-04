@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(31,31, 31);
+}
+.p{
+    color: darkcyan;
+}
+#idselector,#idselector2{
+    background-color: skyblue;
+}
+.classselector{
+    color: tomato;
+}
+#headings{
+    background-color: black;
+    color: white;
+}

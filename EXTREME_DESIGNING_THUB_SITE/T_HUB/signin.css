@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(2, 11, 22);
+}
+.contact{
+  line-height: 35px;
+  font-weight: 900;
+}
+.acc{
+    font-weight: 700;
+    text-align: left;
+}
+body{
+    background-color: #111822;
+}
+.signinbox{
+    display: flex; 
+    justify-content: space-evenly;
+}
+.signincard{
+    background-color: #1c252d;
+    width: 400px;
+}
+.nav{
+    position: sticky;
+    top: 0px;
+  }
+.logout{
+    color: white;
+     background-color: green;
+    
+  }
+.th{
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+    line-height: 60px;
+  }
+  .tp{
+    background-color: #1c242f;
+  }
+  .t1
+{
+  background-color: #111822;
+}
+.t2
+{
+  background-color: rgb(2, 11, 22);
+}
+.pin{
+    width: 100%;
+    height: 40px; 
+    background-color: #263545; 
+    border:1px solid #263545; 
+    border-radius:3px;
+}
+.pass{
+    width: 100%; 
+    height: 40px; 
+    background-color: #263545; 
+    border:1px solid #263545; 
+    border-radius:3px;
+}
+.sbutton{
+    color: white; 
+    width: 100%; 
+    height: 40px;  
+    background-color: green;
+}
+*{
+    text-align: left;
+}
+.mr{
+    margin-top: 100px;
+}
+.b-d{
+  position: absolute;
+}
+input{
+  color: white;
+}

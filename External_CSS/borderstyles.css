@@ -1,0 +1,39 @@
+.border1{
+    border: 2px solid white;
+    color: white;
+}
+.border2{
+    border: 2px dotted green;
+    color: green;
+}
+.border3{
+    border: 2px dashed orange;
+    color: orange;
+}
+#border4{
+    border: 2px double white;
+    color: white;
+}
+#border5{
+    border: 2px groove whitesmoke;
+    color: white;
+}
+#border6{
+    border: 2px ridge white;
+    color: white;
+}
+#border7{
+    border: 2px inset white;
+    color: white;
+}
+#border8{
+    border: 2px outset white;
+    color: white;
+}
+#border9{
+    border: 2px hidden white;
+    color: white;
+}
+body{
+    background-color: rgb(31, 31, 31);
+}

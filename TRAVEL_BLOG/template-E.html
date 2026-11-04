@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel.CO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/flat-design-vintage-travel-label.png">
+</head>
+<style>
+   
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    #home{
+        width: 100%;
+        height: 800px;
+        background-image: url(./images/homeexat.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255);
+        margin-top: 0px;
+        
+    }
+    #menu{
+        width: 100%;
+        height: 100px;
+        color:white;
+        margin-top: 0px;
+        margin-right: 0px;  
+    }
+    #menubox1{
+        width: 550px;
+        height: 100px;
+        padding-left: 75px;
+        padding-right: 0px;
+        padding-top: 20px;
+        float: left;
+        font-family: sans-serif;        
+    }
+    #menubox2{
+        width: 800px;
+        height: 100px;
+        text-align: right;
+        float: right;
+        color: white;
+        padding-top: 50px;
+        text-shadow: 2px 2px 2px 2px grey;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        margin-right: 70px;
+    }
+    #homecontent{
+        width: 50%;
+        height: 600px;
+        color: white;
+        float: left;
+        padding-top: 30px;
+        margin-left: 75px;
+        text-align: left;
+    }
+    #intro{
+        font-size: 90px;
+        font-family: sans-serif;        
+        font-weight: 100;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    #matter{
+        font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif ;
+        font-size: 25px;
+        text-align: left;
+        line-height: 40px;
+        margin-bottom: 20px;
+       
+    }
+    a:hover{
+        color:skyblue;
+    }
+    #homebutton
+    {
+        border: none;
+        width: 130px;
+        height: 50px;
+        border-radius: 5px;
+        background: linear-gradient(to right,rgb(9, 148, 203),skyblue);
+        color: white;
+    }
+
+    #homebutton:hover{ 
+
+        color: rgb(59, 101, 118);
+        font-weight: bold;
+        transition: 2s ease;
+    }
+    /* home-completed */
+    #BLOG{
+        width: 100%;
+        height: 1100px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 12px;
+        background-color: aliceblue;
+    }
+    #bloghead{
+        margin-top: 0px;
+        padding-top: 50px;
+        color: rgb(13, 162, 221);
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: 100;
+        font-family: sans-serif;        
+    }
+    #blogcontainer{
+        margin-top: 80px;
+        width: 95%;
+        height: 350px;
+        margin-left: 50px
+    }
+    #blogbox{
+        width: 30%;
+        height: 100%;
+        margin: 20px;
+        float: left;
+        background-color: white;
+        text-align: left;
+    }
+   
+    #blogi{
+       font-size: 25px;
+       float: left;
+        position: relative;
+        bottom:0px;
+        top: 10px;
+        left: 20px;
+        color:rgb(196, 196, 196);
+        margin-right: 40px;
+
+    }
+    #bloglocations{
+        width: 100%;
+        height: 45px;
+        padding-top: 5px;
+    }
+    #blogi:hover{
+        color: rgba(255, 0, 0, 0.675);
+    }
+    /* blog-completed */
+    #contact{
+        width: 100%;
+        height: 400px;
+        text-transform: capitalize;
+    }
+    #contactbox{
+        width: 25%;
+        height: 90%;
+        float: left;
+        margin-top: 15px;
+        margin-left: 75px;
+        margin-right: 20px;
+        padding-top: 25px;
+        color: grey;
+        text-align: left;
+        line-height: 50px;
+    }
+    #contacthead{
+        color: black;
+        font-size: 30px;
+        font-weight: 100;
+        text-transform: capitalize;
+        font-family: sans-serif;        
+    }
+    #contactlist{
+        line-height: 50px;
+        font-size: 22px;
+        position: relative;
+        left: -40px;
+        right: 0px;
+        font-weight: bold;
+        color: rgb(50, 191, 247);
+
+    }
+    input{
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: rgba(128, 128, 128, 0.105);
+        border: 2px solid transparent;
+    }
+    #contactbutton{
+        width: 100px;
+        height: 50px;
+        background-color: rgb(37, 181, 238);
+        border: 2px solid white;
+        color: white;
+        margin-left: 10px;
+    }
+    #contacticons{
+        font-size: 25px;
+        margin-right: 25px;
+    }
+    /* contact-completed */
+    #page4{
+        width: 100%;
+        height: 750px;
+        background-image: url(./images/e2.webp);
+        background-size: cover;
+        opacity: 0.8;
+    }
+    #fullpage4{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 255, 0.284);
+    }
+    #page4content{
+        color: white;
+        text-align: right;
+        float: right;
+        margin-top: 200px;
+        margin-right: 100px;
+        text-transform: capitalize;
+        font-size: 22px;
+        font-family: sans-serif;    
+        line-height: 40px;    
+        font-weight: 100;
+    }
+    #page4button{
+        width: 125px;
+        height: 50px;
+        background-color: rgba(128, 128, 128, 0.142);
+        color: white;
+        border: 3px solid white;
+    }
+    #page4button:hover{
+        color: white;
+        background-color: rgba(83, 184, 224, 0.468);
+    }
+    #discounthead{
+        font-family: sans-serif;
+        font-weight: 100;
+        margin-bottom: 20px;
+        line-height: 60px;
+    }
+    /* page4-completed */
+    #page5{
+        width: 100%;
+        height: 750px;
+        text-align: center;
+        background-color:aliceblue;
+        font-size:18px;
+    }
+    #page5head{
+        margin-top: 0px;
+        padding-top: 30px;
+        font-family: sans-serif;        
+        font-weight: 100;
+        font-size: 35px;
+        text-transform: capitalize;
+    }
+    #page5container{
+        width: 95%;
+        height: 550px;
+        margin: 10%;
+        margin-left: 75px;
+        margin-top: 75px;
+    }
+    #p5h1box{
+        width: 45%;
+        height: 90%;
+        margin: 10px;
+        background-image: url(./images/p5h.jpg);
+        float: left;
+        background-size: cover;
+    }
+    #p5h2box{
+        width: 45%;
+        height: 90%;
+        margin: 10px;
+        float: left;
+    }
+    #inbox1{
+        width: 48%;
+        height: 100%;
+        float: left;
+        background-color: white;
+    }
+    #inbox2{
+        width: 48%;
+        height: 100%;
+        float: right;
+        padding-right:5px ;
+        background-color: white;
+
+    }
+    #inboxc{
+        width: 95%;
+        height: 48%;
+        margin-bottom: 20px;
+        float: left; 
+
+    }
+    #page5i{
+        font-size: 30px;
+        color: skyblue;
+        margin-top: 30px;
+    }
+    #inboxhead{
+        color: black;
+        font-size: 25px;
+        font-weight: 100;
+        text-transform: capitalize;
+        font-family: sans-serif;  
+    }
+    /* page 5-completed */
+    #footer{
+        width: 100%;
+        height: 250px;
+        background-color: rgb(44, 44, 44);
+        text-align: center;
+        color: white;
+        font-family: sans-serif;    
+        font-size: 12;    
+    }
+    #footerhead{
+        margin-top: 0px;
+        padding-top: 20px;
+        font-weight: 100;
+        font-size: 40px;
+    }
+    #footericons{
+        font-size: 22px;
+        margin-right: 15px;
+    }
+    @media screen and (min-width:427px) and (max-width:760px)     /* small screen  */
+    {
+        #home{
+            height: 400px;
+
+        }
+        #menubox1{
+            width: 30%;
+            height: 5%;
+            padding-left: 2%;
+            padding-top: 0%;
+            font-size: 15px;
+        }
+        #menubox2{
+            width: 70%;
+            height: 5%;
+            padding-top: 5.5%;
+            display: flex;
+            font-size: 10px;
+            padding-right: -10px;
+            justify-content: space-evenly;
+        }
+        a{
+            margin-right: 0%;
+        }
+        #homecontent{
+            height: 400px;
+            padding-top: 3%;
+            margin-left: 3%;
+        }
+        #intro{
+            font-size: 50px;
+            margin-bottom: 5%;
+        }
+        #matter{
+            font-size: 15px;
+            line-height: 20px;
+        }
+        #homebutton{
+            width: 40%;
+            height: 40px;
+        }
+        #BLOG{
+            height: 50%;
+        }
+        #blogcontainer{
+            margin-top: 8%;
+            width: 9%;
+            height: 35%;
+            margin-left: 5%;
+        }
+        #bloghead{
+            padding-left: -50px;
+            padding-top: 5%;
+            margin-top: 0%;
+            margin-bottom:2%;
+            font-size: 30px;
+            margin-right: 20%;
+            text-align: center;
+            border: 2px solid;
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:1024px)    /* medium screen  */
+    {
+
+    }
+</style>
+<body>
+    <div id="home">
+        <div id="menu">
+            <div id="menubox1">
+                <h1>Travel.co</h1>
+            </div>
+            <div id="menubox2">
+                <a href="#home">HOME</a>
+                <a href="#BLOG">BLOG</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#page4">DISCOUNTS</a>
+                <a href="#page5">INFO</a>
+            </div>
+        </div>
+        <div id="homecontent">
+            <h1 id="intro">Travel</h1>
+            <p id="matter">Here are my favorite travel and adventure<br>quotes, paired with images from my <br>journeys around the world.</p>
+            <p id="matter"></p><br>
+            <button id="homebutton">Read more</button>
+        </div>
+    </div>
+    <!-- blog-page -->
+    <div id="BLOG">
+        <h1 id="bloghead">start your journey</h1>
+        <p><i id="contacticons">the most searched countries in march</i></p>
+        <div id="blogcontainer">
+            <div id="blogbox">
+                <img src="./images/sanatorini.jpg" width="100%" height="80%" id="blogimg">
+                <div id="bloglocations"><i  class="fa-solid fa-location-dot" id="blogi"></i><p><i id="contacticons">santorini, greece</i></p></div>
+            </div>
+            <div id="blogbox">
+                <img src="./images/vernazza.jpg" width="100%" height="80%" id="blogimg">
+                <div id="bloglocations"><i class="fa-solid fa-location-dot" id="blogi"></i><p><i id="contacticons">vernazza, italy</i></p></div>
+
+            </div>
+            <div id="blogbox">
+                <img src="./images/san francisco.jpg" width="100%" height="80%" id="blogimg">
+                <div id="bloglocations"><i class="fa-solid fa-location-dot" id="blogi"></i><p><i id="contacticons">san francisco</i></p></div>
+            </div>
+        </div>
+        <div id="blogcontainer">
+            <div id="blogbox">
+                <img src="./images/navagio.jpg" width="100%" height="80%" id="blogimg">
+                <div id="bloglocations"><i  class="fa-solid fa-location-dot" id="blogi"></i><p><i id="contacticons">navagio, greece</i></p></div>
+            </div>
+            <div id="blogbox">
+                <img src="./images/Ao Nang.jpg" width="100%" height="80%" id="blogimg">
+                <div id="bloglocations"><i  class="fa-solid fa-location-dot" id="blogi"></i><p><i id="contacticons">ao nang, thailand</i></p></div>
+            </div>
+            <div id="blogbox">
+                <img src="./images/phi phi islands.jpg" width="100%" height="80%" id="blogimg">
+                <div id="bloglocations"><i class="fa-solid fa-location-dot" id="blogi"></i><p><i id="contacticons">phi phi islands, thailand</i></p></div>
+            </div>
+        </div>
+    </div>
+    <!-- contact-page -->
+    <div id="contact">
+        <div id="contactbox">
+            <h1 id="contacthead" >Browse tours by activity</h1>
+            <div id="contactlist">
+                <ul type="none">
+                <li align="left">outdoor activities</li>
+                <li align="left">cultural & thematic tours</li>
+                <li align="left">family friendly tours</li>
+                <li align="left">holiday & seasonal tours</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contactbox">
+            <h1>&nbsp;</h1>
+            <div id="contactlist">
+                <ul type="none">
+                <li align="left">outdoor activities</li>
+                <li align="left">cultural & thematic tours</li>
+                <li align="left">family friendly tours</li>
+                <li align="left">holiday & seasonal tours</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contactbox">
+            <h1 id="contacthead" align="left">newsletter</h1>
+            <p>subscribe for updates & promotions</p>
+            <form >
+                <input type="email" placeholder="  Enter a valid Email address">
+                <button type="submit" id="contactbutton">Submit</button><br><br>
+                <i id="contacticons" class="fa-brands fa-facebook"></i>
+                <i id="contacticons" id="contacticons" class="fa-brands fa-twitter" ></i>
+                <i id="contacticons" class="fa-brands fa-instagram" ></i>
+                <i id="contacticons" class="fa-brands fa-youtube"></i>
+                <i id="contacticons" class="fa-brands fa-linkedin"></i>
+                <i id="contacticons" class="fa-brands fa-google"></i>
+            </form>
+        </div>
+    </div>
+    <!-- page-4 -->
+    <div id="page4">
+        <div id="fullpage4">
+           <div id="page4content">
+                <h1 id="discounthead">discount 10-30% off</h1>
+                <p>Curabitur blandit tempus porttitor. maecenas faucibus mollis interdum.
+               <br> duis mollis,est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                <br>odio sem nec elit.</p>
+                <button id="page4button">see tours</button>
+           </div>
+        </div>
+    </div>
+    <!-- page-5 -->
+    <div id="page5">
+        <h1 id="page5head">why choose us</h1>
+        <p><i>the gladdest moment in human life,me thinks is a departure into unknown lands.</i></p>
+        <div id="page5container">
+            <div id="p5h1box"></div>
+            <div id="p5h2box">
+                <div id="inboxc">
+                    <div id="inbox1"><img src="./images/beachtngs.jpg" width="100%" height="100%"></div>
+                    <div id="inbox2">
+                        <i id="page5i" class="fa-solid fa-earth-americas"></i>
+                        <h1 id="inboxhead">passionate travel</h1>
+                        <p><i>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia</i></p>
+                    </div>
+                </div>
+                <div id="inboxc">
+                    <div id="inbox1">
+                        <i id="page5i" class="fa-solid fa-map-location-dot"></i>
+                        <h1 id="inboxhead">beautiful places</h1>
+                        <p><i>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia</i></p>
+
+                    </div>
+                    <div id="inbox2"><img src="./images/party.jpg" width="100%" height="100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer"><br>
+        <h1 id="footerhead">Travel.co</h1>
+        <i id="footericons" class="fa-brands fa-facebook"></i>
+        <i id="footericons" class="fa-brands fa-twitter" ></i>
+        <i id="footericons" class="fa-brands fa-instagram" ></i>
+        <i id="footericons" class="fa-brands fa-linkedin"></i><br><br>
+        <P><i>Travel makes one modest. You see what a tiny place you occupy in the world</i></P>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(2, 11, 22);
+}
+.contact{
+  line-height: 35px;
+  font-weight: 900;
+}
+.acc{
+    font-weight: 700;
+}
+body{
+    background-color: #111822;
+}
+*{
+    color: white;
+    text-align: left;
+}
+.logout{
+    color: white;
+     background-color: green;
+  }
+  .t1
+{
+  background-color: #111822;
+}
+.t2
+{
+  background-color: rgb(2, 11, 22);
+}
+.nav{
+  position: sticky;
+  top: 0px;
+}
+.b-d{
+  position: absolute;
+  z-index: 100;
+}

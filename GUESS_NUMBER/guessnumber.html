@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>security matters</title>
+</head>
+<style>
+    .names {
+        padding: 15px;
+        float: left;
+        text-align: right;
+    }
+
+    .values {
+        padding: 15px;
+        float: right;
+        text-align: left;
+    }
+
+    form {
+        align-items: center;
+        text-align: center;
+        margin-top: 15%;
+        padding: 15px;
+        padding-top: 25px;
+        color: white;
+        font-size: 20px;
+        padding-bottom: 25px;
+        background-color: rgba(128, 128, 128, 0.411);
+    }
+
+    body {
+        background-image: url(../images/f.jpg);
+        display: flex;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    input {
+        width: 200px;
+        color: white;
+        background-color: rgba(128, 128, 128, 0);
+        border: 1px solid rgba(128, 128, 128, 0);
+        box-shadow: 0px 1px rgba(228, 224, 224, 0.973);
+    }
+
+    button {
+        background-color: rgba(128, 128, 128, 0.5);
+        color: white;
+        border: 1px solid rgba(231, 225, 225, 0.338);
+
+    }
+
+    .but {
+        width: 45px;
+        text-align: left;
+        color: white;
+        margin-left: 5px;
+    }
+
+    button:active {
+        background-color: rgb(235, 225, 225);
+    }
+</style>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Guess the Number</legend>
+            <input type="number" id="value"><br><br>
+            <center><button type="button" onclick="check()">check</button>
+                <p id="result"></p>
+            </center>
+
+        </fieldset>
+    </form>
+    <script>
+        real_number = Math.floor(Math.random() * 100);
+        window.alert("guess number from 0 to 100")
+        function check() {
+            user_input = parseInt(document.getElementById("value").value);
+            if (user_input < 0 || user_input > 100) {
+                window.alert("please Enter valid input\nguess number from 0 to 100 only")
+            }
+            else if (user_input < real_number) {
+                document.getElementById("result").innerHTML = "your number is lessthan to real number"
+
+            }
+            else if (user_input > real_number) {
+                document.getElementById("result").innerHTML = "your number is greater than to real number"
+            }
+            else if(user_input == real_number){
+                document.getElementById("result").innerHTML = "Congratulations 🥳🎉 You won " + "\n" + "you have guessed that number"
+                document.getElementById()
+            }
+            else{
+                document.getElementById("result").innerHTML = "NOT MATCHED !"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
