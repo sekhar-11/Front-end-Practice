@@ -1,2 +1,2 @@
 # Front-end-Practice
-working on HTML, CSS, JS, Bootstrap 
+Practiced on HTML, CSS, JS, Bootstrap 
